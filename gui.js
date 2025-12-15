@@ -592,6 +592,7 @@ ${
         Blockly.bindEvent_(themer, 'click', themer, showThemePicker);
         dom.appendChild(header, themer);
         const source = dom.createDom('a', '', 'source code');
+        source.title = 'Shpr is provided free of charge without warrenty and is licensed under the GNU AGPL-3.0-only license.';
         source.href = 'https://github.com/Unsandboxed/shaper/';
         dom.appendChild(header, source);
       })();
