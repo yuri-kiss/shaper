@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shpr</title>
+  <script>if ((new Error()).fileName !== (void 0)) {
+    // Firefox doesn't work right now, ain't got no idea why; sorry.
+    document.title += ' | Firefox is not supported';
+    document.querySelector(':root').style = 'display: none;visibility: hidden;pointer-events: none;';
+    alert('Firefox is not supported, sorry :p');
+    throw new Error('Firefox is not supported, sorry :p');
+  }</script>
   <style>
     :root {
       --usb-gray: rgb(102, 117, 127);
@@ -264,6 +271,8 @@
   document.querySelector(':root').style.setProperty(
     '--user-theme', `var(--${Retheme.ACTIVE})`
   );}</script>
+  <script>
+  </script>
 </head>
 <body>
   <noscript>This page requires JavaScript.</noscript>
@@ -277,3 +286,4 @@
   <script src="gui.js" defer></script>
 </body>
 </html>
+<!--.󠁉󠀬󠀠󠁭󠁩󠁹󠁯󠀬󠀠󠁡󠁭󠀠󠁳󠁯󠁲󠁲󠁹󠀠󠁦󠁯󠁲󠀠󠁷󠁨󠁡󠁴󠀠󠁉󠀠󠁨󠁡󠁶󠁥󠀠󠁤󠁯󠁮󠁥󠀠󠁡󠁮󠁤󠀠󠁡󠁬󠁬󠀠󠁉󠀠󠁷󠁡󠁮󠁴󠀠󠁩󠁳󠀠󠁪󠁵󠁳󠁴󠀠󠁴󠁯󠀠󠁢󠁥󠀠󠁨󠁥󠁡󠁲󠁤󠀬󠀠󠁩󠁦󠀠󠁡󠁮󠁹󠁯󠁮󠁥󠀠󠁨󠁡󠁳󠀠󠁱󠁵󠁥󠁳󠁴󠁩󠁯󠁮󠁳󠀠󠁰󠁬󠁥󠁡󠁳󠁥󠀠󠁡󠁤󠁤󠀠󠁭󠁥󠀠󠁯󠁮󠀠󠁤󠁩󠁳󠁣󠁯󠁲󠁤.-->
