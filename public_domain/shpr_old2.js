@@ -1,4 +1,11 @@
+// copied from an older version i made thats not got a license
+// so just use this as public domain, idgaf
+
+window.Shpr = window.Shpr || {};
+
 void !function () {
+  const Shpr = window.Shpr;
+
   class Raw {
     constructor(type, value) {
       this.type = type;
@@ -63,7 +70,7 @@ void !function () {
       return `\`${this.shape.join('').trim()}\``;
     }
   }
-  Blockly.Shpr.BabelFramework = class BabelFramework {
+  Shpr.BabelFramework = class BabelFramework {
     static PathBuilders = new Set([
       'cursor.goto',
       'cursor.move',
